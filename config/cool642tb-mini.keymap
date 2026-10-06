@@ -86,7 +86,7 @@
             >;
         };
 
-        layer_3 {
+        MOUSE_FAST {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
@@ -102,7 +102,7 @@
 &kp LC(Z)        &kp LC(A)  &kp LC(X)        &kp LC(C)    &kp LC(V)                                               &kp LG(S)             &kp LC(NUMBER_1)  &mkp MB4        &mkp MB5      &kp LC(LS(T))
 &kp LC(H)        &kp LG(E)  &mkp MB2         &mkp MB1     &kp LG(V)             &trans               &trans       &kp F2                &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
 &kp LC(W)        &kp LC(T)  &kp LC(LS(TAB))  &kp LC(TAB)  &kp LC(S)             &trans               &trans       &kp LC(LS(I))         &msc SCRL_LEFT    &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
-&kp PRINTSCREEN  &trans     &to 4            &to 0        &mt LEFT_CONTROL TAB  &mo 7                &kp LG(TAB)  &mt LEFT_SHIFT SPACE                                                  &tog 5
+&kp PRINTSCREEN  &trans     &to 4            &to 0        &mt LEFT_CONTROL TAB  &mo 3                &kp LG(TAB)  &mt LEFT_SHIFT SPACE                                                  &tog 5
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -117,13 +117,15 @@
             >;
         };
 
-        layer_6 {
+        MAC {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&kp LC(Z)        &kp LC(A)  &kp LC(X)        &kp LC(C)    &kp LC(V)                                               &kp LG(S)             &kp LC(NUMBER_1)  &mkp MB4        &mkp MB5      &kp LC(LS(T))
+&kp LC(H)        &kp LG(E)  &mkp MB2         &mkp MB1     &kp LG(V)             &trans               &trans       &kp F2                &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
+&kp LC(W)        &kp LC(T)  &kp LC(LS(TAB))  &kp LC(TAB)  &kp LC(S)             &trans               &trans       &kp LC(LS(I))         &msc SCRL_LEFT    &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
+&kp PRINTSCREEN  &trans     &to 4            &to 0        &mt LEFT_CONTROL TAB  &mo 3                &kp LG(TAB)  &mt LEFT_SHIFT SPACE                                                  &tog 5
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         layer_7 {
