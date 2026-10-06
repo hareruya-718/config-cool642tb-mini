@@ -37,21 +37,6 @@
 
             tap-ms = <20>;
         };
-
-        // カスタムマウス移動の設定
-        /*
-        my_mmv: my_mouse_move {
-            compatible = "zmk,behavior-mouse-move";
-            #binding-cells = <1>;
-        */
-            // 最高速度に達するまでの時間（ミリ秒）
-
-            //time-to-max-speed-ms = <300>;
-
-            // 加速度の指数 (0 = 等速, 1 = 一定の加速度, 2 = 2次関数的な加速)
-
-            //acceleration-exponent = <1>;
-        //};
     };
 
     keymap {
