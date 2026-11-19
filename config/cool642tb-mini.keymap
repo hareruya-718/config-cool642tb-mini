@@ -8,6 +8,7 @@
 #define FUNCTION 2
 #define MOUSE_FAST 3
 #define MOUSE 4
+#define SHORTCUT 5
 #define MAC 6
 #define SCROLL 7
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200
@@ -110,7 +111,7 @@
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-        layer_5 {
+        SHORTCUT {
             bindings = <
 &trans  &trans             &kp LA(DOWN_ARROW)  &kp LC(LS(L))        &trans                      &trans  &trans  &trans              &trans            &trans
 &trans  &kp LC(SEMICOLON)  &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &trans  &trans      &trans  &trans  &trans  &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &trans
